@@ -1,0 +1,19 @@
+h1 {
+   color: blueviolet;
+   text-transform: lowercase;
+}
+
+p.paragraf-1 {
+    color: cadetblue;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+#header-1 {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+input[type="text"] {
+    border:1px solid  green
+}
