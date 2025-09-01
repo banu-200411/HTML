@@ -1,0 +1,12 @@
+#header {
+    background: rgb(153, 0, 255);
+    color: whitesmoke;
+    height: 100px;
+    padding: 50px;
+}
+.link {
+    background: rgb(0, 0, 0);
+    color: wheat;
+    padding: 5px;
+    text-decoration: none;
+}

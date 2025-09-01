@@ -1,0 +1,61 @@
+*{
+    border: 1px solid goldenrod ;
+}
+p{
+    color: lightblue;
+}
+div{
+    color: aqua;
+}
+.pink{
+    color: palegreen;
+    background: palevioletred;
+    padding: 5px;
+}
+.paragraf {
+       color: black;
+       font-weight: bold;   
+
+}
+.textwhite{
+    color: white;
+}
+.bg-teal{
+    background: teal;
+}
+#header{
+    background: teal;
+    color: white;
+    height: 100px;
+    padding: 50px;
+}
+#menu {
+    background: lightcoral;
+    color: white;
+    padding: 100px;
+    height: 100px;
+    margin-top: 500px;
+}
+#top{
+    background: lightblue;
+    color: antiquewhite;
+}
+input[type="text"]{
+    color: black;
+    background: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+a:hover{
+color: green;
+background: black;
+padding: 5px;
+text-decoration: none;
+}
+p span{
+    color: burlywood;
+}
+p::first-line{
+    color: violet;
+}
