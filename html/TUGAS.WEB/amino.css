@@ -1,0 +1,20 @@
+h1{
+    color: #ff008f;0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+img {
+    width: 600px;
+    height: 500px;
+    border: radius 10px; ;
+}
+p{
+    color: #556B2F;
+}
+button{
+    color: #00000;
+    margin: 30px;
+    background-color:#EBCB90 ;
+}

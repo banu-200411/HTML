@@ -1,0 +1,83 @@
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+ display: flex;
+ background-color: aquamarine;
+ align-items: center;
+}
+#navbar {
+    display: flex;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+nav{
+    margin: 10px;
+
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.search input[type="text"] {
+    border-radius: 5px;
+    padding:5px ;
+    width: 150px;
+}
+.search button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color:#fff;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login{
+    width: 100px;
+    margin: 0 20px;
+    display: block;
+    padding: 5px 10px;
+    background-color: #ddd23d;
+    color: #F08787;
+    border: 1px solid #FFC7A7;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.benner {
+    text-align: center;
+    padding: 10px 20px; 
+}
+.benner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
