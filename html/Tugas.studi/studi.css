@@ -1,0 +1,25 @@
+header{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+
+}
+img{
+    width: 800px;
+    border-radius: 14px;
+}
+button{
+    background-color: #A7E399;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center; 
+}
+p{
+      font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+}

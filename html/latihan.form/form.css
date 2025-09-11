@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+}
+.left-to-right {
+    direction: ltr;
+    text-align: left;
+    font-size: 24px;
+    margin: 20 px;
+}
+.right-to-left {
+    direction: rtl;
+    text-align: justify;
+    font-size: 24px;
+    margin: 20px;
+}
+.upperline{
+    text-decoration: underline;
+    line-height: 1,6;
+
+}
+.lowerline{
+    text-decoration: overline;
+    line-height: 1,6;
+}
+.deleted{
+    text-decoration: line-through;
+}
