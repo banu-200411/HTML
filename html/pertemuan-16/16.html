@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* static */
+.container {
+  background: lightgreen;
+  width: 600px;
+  height: 150px;
+}
+
+.yellow-boxes {
+  display: inline-block;
+  margin: 10px;
+  background: rgb(140, 140, 55);
+  width: 100px;
+  height: 100px;
+}
+
+/* relative */
+.inline-block {
+    background: rgb(220, 129, 146);
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+    top: 40px;
+}
+/* Fixed */
+.text {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.fixed {
+    position: fixed;
+    top: 390px;
+    width: 300px;
+    padding: 10px 20px;
+    background: #73ad21;
+}
+/* Fixed */
+.text {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.fixed {
+    position: fixed;
+    top: 390px;
+    width: 300px;
+    padding: 10px 20px;
+    background: #73ad21;
+}
+/* Absolute */
+.small-square {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    background: yellow;
+}
+
+.medium-square {
+    height: 200px;
+    width: 300px;
+    background: red;
+}
+
+.big-square {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background: deepskyblue;
+}
+ /* sticky */
+.sticky {
+    position: sticky;
+    top: 300px;
+    padding: 5px;
+    background-color: yellow;
+    border: 2px solid blue;
+
+}
+p.content {
+    height: 100vh;
+    width: 500px;
+}
+p {
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    z-index: -1;
+    background-color: red;
+}
+
+    </style>
+    <!-- static -->
+<div class="container">
+  <div class="yellow-boxes" style="top: 20px;"></div>
+  <div class="yellow-boxes" style="right: 20px;"></div>
+  <div class="yellow-boxes" style="bottom: 20px;"></div>
+  <div class="yellow-boxes" style="left: 20px;"></div>
+</div>
+
+<div>
+    <div class="inline-block"></div>
+    <div class="inline-block relative" ></div>
+    <div class="inline-block"></div>
+</div>
+<p class="text">
+   
+</p>
+<div class="fixed">
+    <div>this div element has position: fixed;</div>
+</div>
+<p class="text">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sapiente voluptatem, corporis blanditiis iste saepe recusandae quaerat omnis eum nobis accusamus, dicta quam neque? Sint debitis itaque quaerat id nulla quo commodi quae vel quas, nobis vero numquam dolorem molestiae expedita repellendus quidem maxime tempore!
+</p>
+<div class="fixed">
+    this is div elemen has position: fixed ;
+</div>
+
+  <!-- Absolute -->
+    <div class="big-square">
+        <div class="medium-square">
+            <div class="small-square"></div>
+        </div>
+    </div>
+    
+    <div class="sticky">i'am sticky</div>
+    <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, officiis necessitatibus? Perspiciatis ratione esse architecto suscipit dolorum labore quas neque quasi voluptatum tempore necessitatibus quod quidem, amet iusto temporibus eveniet dolore provident error voluptatem modi vel aperiam distinctio nemo! Quod eum sunt sequi eaque optio.
+    </p>
+</body>
+</html>

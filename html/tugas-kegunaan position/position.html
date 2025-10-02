@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+header {
+      position:sticky;
+      top: 0;
+      height: 64px;
+      background-color: cornsilk;
+}
+.badge {
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    color: aqua;
+    background-color: black;
+
+}
+
+.clearfix::after {
+         content: "";
+         display: block;
+         clear: both;
+}
+.card {
+    padding: 50px;
+    margin: 40px;
+    border: 1px solid black;
+}
+.box-a {
+    background-color: aquamarine;
+    z-index: 1;
+    left: 32px;
+    top: 16px;
+    height: 120px;
+    width: 115px;
+    border-radius:12px ;
+}
+.box-b {
+    background-color: lemonchiffon;
+    z-index: 2;
+    left: 77px;
+    top: -80px;
+    height: 120px;
+    width: 115px;
+    position: relative;
+    border-radius: 12px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+     <h1>Header Sticky</h1>
+    </header>
+   
+     <div class="card">
+        
+        <img src="disney.jpg" width="300px">
+        <span class="badge">new</span>  
+        <h2>ini judul card</h2>
+        <p>tag</p>
+        <p>paragraf.....(konten)</p>
+     </div> 
+     <span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi repellendus similique rerum quam, et voluptatibus eligendi veritatis nemo hic, neque modi. Deleniti alias vel ipsum numquam velit, amet expedita laboriosam soluta impedit, et possimus error harum dolor nam. Assumenda.</p>
+    </span>
+     <div class="boxes">
+        <div class="box-a">Box-A</div>
+        <div class="box-b">Box-B</div>
+     </div> 
+     <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea iure modi rerum odit culpa deleniti temporibus adipisci earum ex quasi, inventore aliquid quos ipsum, quo repellat molestias ullam cum iusto numquam rem doloribus? Adipisci iure commodi quos fuga tempora. Quas, ratione? Ea, repudiandae veritatis illo praesentium ipsa distinctio consectetur ipsam error asperiores animi? Earum ea nulla at aspernatur aliquid officiis minus culpa rerum, repellendus, doloribus aut ut aperiam unde</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nemo, laborum repudiandae itaque velit vitae excepturi nostrum impedit quidem soluta.</p>
+     </div>
+</body>
+</html>
