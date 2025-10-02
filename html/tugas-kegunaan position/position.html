@@ -5,66 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-header {
-      position:sticky;
-      top: 0;
-      height: 64px;
-      background-color: cornsilk;
-}
-.badge {
-    position: absolute;
-    top: 1px;
-    right: 8px;
-    color: aqua;
-    background-color: black;
+        body {
+            margin: 0;
+        }
 
-}
+        .header {
+            position: sticky ;
+            top: 0;
+            height: 64px;
+            background-color: cornsilk;
+            display: flex;
+            align-items: left;
+            padding: 0 32px;
+            z-index: 999;
+            box-shadow: 2px solid aliceblue;
+            
 
-.clearfix::after {
-         content: "";
-         display: block;
-         clear: both;
-}
-.card {
-    padding: 50px;
-    margin: 40px;
-    border: 1px solid black;
-}
-.box-a {
-    background-color: aquamarine;
-    z-index: 1;
-    left: 32px;
-    top: 16px;
-    height: 120px;
-    width: 115px;
-    border-radius:12px ;
-}
-.box-b {
-    background-color: lemonchiffon;
-    z-index: 2;
-    left: 77px;
-    top: -80px;
-    height: 120px;
-    width: 115px;
-    position: relative;
-    border-radius: 12px;
-}
+        }
+        .badge {
+            position: absolute;
+            top: 94px;
+            right: 145px;
+            color: aqua;
+            background-color: black;
+
+        }
+        .card {
+            width: 250px;
+            height: auto;
+            margin: 24px auto;
+            padding: 16px;
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: #B4DEBD;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            background: #cfd8dc;
+            display: block;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .card p.tag {
+            width: 30px;
+            background-color: aliceblue;
+        }
+        
+        .box-a {
+            background-color: aquamarine;
+            z-index: 1;
+            left: 32px;
+            top: 16px;
+            height: 120px;
+            width: 115px;
+            border-radius:12px ;
+        }
+        .box-b {
+            background-color: lemonchiffon;
+            z-index: 2;
+            left: 77px;
+            top: -80px;
+            height: 120px;
+            width: 115px;
+            position: relative;
+            border-radius: 12px;
+        }
 
 
     </style>
 </head>
 <body>
-    <header>
-     <h1>Header Sticky</h1>
-    </header>
+    <div class="header">
+        <h1>Header sticky</h1>
+    </div>
    
      <div class="card">
         
-        <img src="disney.jpg" width="300px">
+        <img src="dhqbi.jpg" width="300px">
         <span class="badge">new</span>  
         <h2>ini judul card</h2>
-        <p>tag</p>
-        <p>paragraf.....(konten)</p>
+        <p class="tag">tag</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, vitae est! Fuga ex amet soluta debitis architecto similique tenetur quae officia omnis exercitationem aut eius nesciunt, minus porro maiores. Suscipit.</p>
      </div> 
      <span>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi repellendus similique rerum quam, et voluptatibus eligendi veritatis nemo hic, neque modi. Deleniti alias vel ipsum numquam velit, amet expedita laboriosam soluta impedit, et possimus error harum dolor nam. Assumenda.</p>
