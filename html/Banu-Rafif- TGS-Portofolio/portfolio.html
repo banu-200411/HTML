@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #fff;
+        color: #333;
+      }
+
+      /* Navbar Container */
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 60px;
+        border-bottom: 1px solid #eaeaea;
+        background-color: white;
+      }
+
+      /* Logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        color: #222;
+      }
+
+      .logo img {
+        height: 28px;
+        width: 150px;
+      }
+
+      /* Menu */
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: 0.3s;
+
+      }
+
+      .nav-links a:hover {
+        color: #6c63ff;
+      }
+
+      /* Contact Button */
+      .contact-btn {
+        padding: 8px 18px;
+        border: 1px solid #6c63ff;
+        border-radius: 6px;
+        color: #6c63ff;
+        background: transparent;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .contact-btn:hover {
+        background: #6c63ff;
+        color: white;
+      }
+      .button-nub {
+        padding: 8px 18px;
+        border: 1px solid rgb(10, 10, 10);
+        border-radius: 6px;
+        color: #6c63ff;
+        background: transparent;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .button-nub :hover {
+        background: white;
+        color: #6c63ff
+      }
+      .sec-1 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        padding: 80px 0;
+        background-color: #f5fcff;
+      }
+      .Text-1 {
+        max-width: 500px;
+      }
+
+      span {
+        color: #6c63ff;
+      }
+
+      .img-1 {
+        /* display: inline-block; */
+        max-width: 500px;
+      }
+
+      .img-1 img {
+        width: 550px;
+        }
+      /* Skills */
+      .skills {
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .skills-grid {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      h3 {
+        color: #211832;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        margin-bottom: 12px;
+      }
+
+      .skill-card p {
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+      }
+
+      img {
+        width: 60px;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+      }
+
+      .skill-card {
+        background: #f5fcff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        align-items: left;
+      }
+      .skill-card:hover {
+        transform: translateY(-4px);
+        border-bottom: 3px solid #6b5cff;
+      }
+
+      .About {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        background-color: #f4f6ff;
+        
+      }
+
+      .About-1 img {
+        width:400px;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+      .Text-about {
+        margin: 100px ;
+        font-size: 19px;
+        
+      }
+
+      .portfolio {
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .portfolio-grid {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      .portfolio-item {
+        background: #fffcfb;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        padding-bottom: 15px;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .portfolio-item a {
+       color: #6c63ff;
+       margin-right: 140px;
+      }
+ 
+    
+      .text-skills p {
+        margin-right: 110px;
+      }
+      .text-skills {
+        margin-right: 900px;
+        font-size: 20px;
+      }
+
+
+      
+      /* Contact Section */
+      .contact {
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 100px 120px;
+        max-width: 600px;
+        margin: 20px auto;
+
+      }
+
+      .contact-text {
+        text-align: center;
+        margin-bottom: 70px;
+      }
+
+      .contact-text h5 {
+        font-size: 25px;
+        color: #5e3bee;
+        margin-bottom: 10px;
+      }
+
+      .contact-text h2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #282938;
+        margin-bottom: 20px;
+      }
+
+      .contact-text p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #1c1e53;
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      /* Form Layout */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 100;
+      }
+
+      .kari {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 100%;
+        
+      }
+
+      .kanan-kiri {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .kanan-kiri.full {
+        width: 100%;
+      }
+
+      label {
+        font-size: 10px;
+        color: #282938;
+        font-weight: 300px;
+        margin-bottom: 8px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        font-size: 10px;
+        padding: 10px 15px;
+        border: 1.8px solid #5e3bee;
+        border-radius: 8px;
+
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #3d2ecb;
+        box-shadow: 0 0 0 3px rgba(94, 59, 238, 0.15);
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+        
+      }
+
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .checkbox {
+        font-size: 10px;
+        color: #1c1e53;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .checkbox input {
+        width: 20px;
+        height: 20px;
+        color: #5e3bee;
+        align-items: center;
+      }
+
+      .submit {
+        background:#6b5cff;
+        width: 100px;
+        margin: 20px;
+        height: 40px;
+        border-radius: 5px;
+        margin-right: 250px;
+        
+      }
+      .submit:hover {
+        color: white;
+        background: #5e3bee;
+      }
+
+      /* Navbar Container */
+      .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 60px;
+        border-bottom: 1px solid #eaeaea;
+        background-color: white;
+      }
+
+      /* Logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        color: #222;
+      }
+
+      .logo img {
+        height: 28px;
+        width: 150px;
+      }
+
+      /* Menu */
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #6c63ff;
+      }
+
+      /* Contact Button */
+      .contact-btn {
+        padding: 8px 18px;
+        border: 1px solid #6c63ff;
+        border-radius: 6px;
+        color: #6c63ff;
+        background: transparent;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .contact-btn:hover {
+        background: #6c63ff;
+        color: white;
+      }
+      
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      
+      .social-bar img {
+        width: 35px;
+        
+      }
+      
+      footer {
+        padding: 20px;
+      }
+
+       .footer-left {
+        display: flex;
+        align-items: center;
+          gap: 5px;
+      }
+
+      .footer-left span {
+          color: red;
+      }
+
+      .footer-right a {
+          color: #000;
+          text-decoration: none;
+          margin-left: 15px;
+          transition: color 0.3s;
+          margin-bottom: 80px;
+      }
+
+      .footer-right a:hover {
+          color: #007bff;
+          text-decoration: underline;
+      }
+      
+      
+   
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="aset/Logo (3).png" alt="Logo" />
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About me</a>
+      </div>
+
+      <a href="#" class="contact-btn">Contact me</a>
+    </nav>
+
+    <section class="sec-1">
+      <div class="Text-1">
+        <h5>hey, i'am john</h5>
+        <h1>
+          Portofolio Ceria Bersama Membangun <span>website</span> Dengan
+          Kualitas Oke.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab odit
+          rerum quis. Consectetur reiciendis similique dolor officiis cupiditate
+          laudantium mollitia assumenda.
+        </p>
+        <a href="#" class="button-nub">Contact me</a>
+      </div>
+
+      <div class="img-1">
+        <img src="aset/Group 11 1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="skills">
+
+      <div class="text-skills">
+         <p>My skills</p>
+         <h2>My Expertise</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="aset/Strategy & Direction.png" />
+            <h3>Strategy & Direction</h3>
+            <p>
+              Mengatur alur kreatif untuk menghasilkan desain yang menarik dan
+              efektif.
+            </p>
+          </div>
+          <div class="skill-card">
+            <img src="aset/Branding & Logo.png" />
+            <h3>UI & UX Design</h3>
+            <p>
+              Menciptakan pengalaman pengguna yang menyenangkan dan intuitif.
+            </p>
+          </div>
+          <div class="skill-card">
+            <img src="aset/UI & UX Design.png" alt="" />
+            <h3>Branding Logo</h3>
+            <p>Membangun website modern, cepat, dan responsif.</p>
+          </div>
+          <div class="skill-card">
+            <img src="aset/UI & UX Design.png" alt="" />
+            <h3>Webflow Development</h3>
+            <p>proses membangun situs web menggunakan platform </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="About">
+      <div class="About-1">
+        <img src="aset/About Me.png" />
+      </div>
+      <div class="Text-about">
+        <p>About_Me</p>
+        <h1>Tentang Saya</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+          soluta repellat enim obcaecati! Exercitationem, perspiciatis dicta
+          quae harum tempore amet! Sint labore iure assumenda ex autem?
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="text-porto">
+          <p>Recent Project</p>
+          <h2>My Portfolio</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="aset/Image1.png" alt="Project 1" />
+            <h4>E-Commerce Website</h4>
+            <p>Website toko online modern dan cepat.</p>
+            <a href="#">View in Dribbble <span class="arrow">↗</span></a>
+          </div>
+          <div class="portfolio-item">
+            <img src="aset/Image2.png" alt="Project 2" />
+            <h4>Portfolio Pribadi</h4>
+            <p>Website personal branding profesional.</p>
+            <a href="#">View in Dribbble <span class="arrow">↗</span></a>
+          </div>
+          <div class="portfolio-item">
+            <img src="aset/Image3.png" alt="Project 3" />
+            <h4>Blog Pribadi</h4>
+            <p>Tempat menulis dan berbagi ide menarik.</p>
+            <a href="#">View in Dribbble <span class="arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-text">
+        <h5>Get In touch</h5>
+        <h2>Contact-Me</h2>
+        <p>Find the information here</p>
+      </div>
+
+      <form>
+        <div class="kari">
+          <div class="kanan-kiri">
+            <label for="first">First Name</label>
+            <input type="text">
+          </div>
+          <div class="kanan-kiri">
+            <label for="first">Last Name</label>
+            <input type="text">
+          </div>
+        </div>
+        <div class="kari">
+          <div class="kanan-kiri">
+            <label for="email">Email</label>
+            <input type="email">
+          </div>
+       
+          <div class="kanan-kiri">
+            <label for="phone">Phone Number</label>
+            <input type="tel">
+          </div>
+        </div>
+
+        <div class="kanan-kiri full">
+          <label for="topic">Choose a topic</label>
+          <select>
+            <option value="" disabled selected>Select one...</option>
+            <option value="general">General</option>
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+          </select>
+        </div>
+
+        <div class="kanan-kiri full">
+          <label for="message">Message</label>
+          <textarea name="" id="message"></textarea>
+        </div>
+
+        <div class="form-footer">
+          <label class="checkbox">
+            <input type="checkbox">
+            I accept the terms
+          </label>
+          <button class="submit" type="submit">Submit</button>
+
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="logo">
+        <img src="aset/Logo (3).png" alt="Logo" />
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About me</a>
+      </div>
+      <div class="social-bar">
+        <img class="facebook" src="aset/Facebook.svg" alt="">
+        <img class="instagram" src="aset/Instagram.svg" alt="">
+        <img class="twitter" src="aset/Twitter.svg" alt="">
+        <img class="linkedin" src="aset/LinkedIn.svg" alt="">
+      </div>        
+    </footer>
+    <hr>
+      
+    <footer class="footer-">
+        <div class="footer-left">
+            <p>Made with <span>❤</span> by Airodkan</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+        </div>
+    </footer>
+  </body>
+</html>
