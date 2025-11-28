@@ -1,0 +1,78 @@
+body {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.card {
+    
+    display: flexbox;
+    text-align: center;
+    width: 350px;
+    height: 480px;
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+    background-color: #E0E0E0;
+}
+
+.profile {
+    background-color: #001f3f;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.profile img {
+    cursor: pointer;
+    width: 230px;
+    border-radius: 200px;
+
+}
+.profil h2 {
+    color: #000000;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    margin-bottom: 0px;
+    margin-right: 100px;
+
+}
+.profil h5 {
+    color: black;
+    font-size: 15px;
+    line-height:1px;
+    margin-right: 190px;
+}
+.profil p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.btn {
+    background-color: #003873;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    background: #002b5d; 
+    border-radius: 8px;
+    box-shadow: 0 0 0 rgba(255,193,7,0);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.btn:hover {
+    transform: translateY(-6px);
+     box-shadow: 0 12px 20px rgba(11, 7, 255, 0.45);
+}
+.icon{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;                 
+}
+
+.icon img {
+    width: 35px;              
+    height: 35px;
+    border-radius: 6px;
+    object-fit: contain;
+}
