@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tugas Besar-2 Poster</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-color: l;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:url(anomali.jpg);
+           
+        }
+
+        .card {
+            width: 520px;
+            height: 315px;
+            border: 5px solid rgb(140, 140, 140);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+            background-image: url("anomali,jpg.jpg");
+            color: rgb(0, 0, 0);
+          
+            animation-iteration-count: infinite; 
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+
+        }
+        .text h1 {
+            margin-left:10px;
+            color: rgb(0, 0, 0);
+            position: relative; 
+            animation-name: bergerak; 
+            animation-duration: 4s; 
+            animation-iteration-count: infinite; 
+        }
+        .text img {
+            width: 100px;
+        }
+        button {
+              width: 80px; height: 40px;
+              font-size: 15px;
+              background-color: #4e4e4e;
+              display: grid; place-items: center;
+              border-radius: 12px;
+              margin: 10px;
+              transition: transform 0.3s ease-out;
+              color: #ffffff;
+        }
+        button:hover {
+             background: #000000;
+             transform: scale(1.1);
+        }
+
+       
+
+     
+ 
+        @keyframes bergerak {
+            0% {
+                left: 0px;
+                
+            }
+            50% {
+                left: 10px;
+               
+            }
+            100% {
+                left: 0px;
+                
+            }
+        }
+          
+
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="text">
+          
+         
+            <h1>Believe you deserve it, <br>and the universe will deliver.</h1>
+            <br>
+            
+        
+
+        </div>
+        <div class="transition">
+            <div class="btn">
+                <button>Save</button>
+            </div>
+            <div class="icon">
+
+            </div>
+        </div>
+    </div>  
+        
+  
+    
+</body>
+
+</html>
